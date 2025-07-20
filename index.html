@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<!-- c -->
+
+
+	<h2>Registration Form with Validations</h2>
+	<form onsubmit="event.preventDefault(); Check();">
+		<label for="name">Name (1st letter capital, 2-6 letters total)</label>
+		<input type="text" id="name" placeholder="Name">
+
+		<label for="surname">Surname (1st letter capital, 2-10 letters)</label>
+		<input type="text" id="surname" placeholder="Surname">
+
+		<label for="username">Username (max 5 characters)</label>
+		<input type="text" id="username" placeholder="Username">
+
+		<label for="age">Age (numbers only)</label>
+		<input type="text" id="age" placeholder="Age">
+
+		<label for="phone">Phone Number (Armenian format)</label>
+		<input type="text" id="phone" placeholder="+374-XX-XXX-XXX">
+
+		<button type="submit">Check</button>
+	</form>
+
+	<div class="container" id="mec">
+		<div class="column" id="col1"></div>
+		<div class="column" id="col2"></div>
+		<div class="column" id="col3"></div>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
